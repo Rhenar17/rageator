@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>esJoueur</name>
+    <events>
+        <comment>Quand le &quot;sPerso&quot; tombe du Layout, le menu Gameover s&apos;affiche [Debut]</comment>
+        <event-block sid="4599808692959655">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="252375905953954" type="sPerso" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="4805671403317808" type="System">
+                    <param id="0" name="Layout">Gameover</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Quand le &quot;sPerso&quot; tombe du Layout, le menu Gameover s&apos;affiche [Fin]</comment>
+        <comment>Animation du personnage lors de sa marche [Debut]</comment>
+        <event-block sid="9945964082709111">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="4929586691358857" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="3662594474490338" type="sPerso">
+                    <param id="0" name="Animation">&quot;Marche&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="3633856460473825" type="sPerso">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9520970464740632">
+            <conditions>
+                <condition id="3" name="On key released" sid="8078538894699962" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6607713475888216" type="sPerso">
+                    <param id="0" name="Animation">&quot;Pause&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="5329092270001345" type="sPerso">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7609984678560493">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="5878629191734376" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5924572311795028" type="sPerso">
+                    <param id="0" name="Animation">&quot;Marche&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="3891031782315503" type="sPerso">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4090545606210158">
+            <conditions>
+                <condition id="3" name="On key released" sid="7562488756449648" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1775636765863843" type="sPerso">
+                    <param id="0" name="Animation">&quot;Pause&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="8251624444284301" type="sPerso">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Animation du personnage lors de sa marche [Fin]</comment>
+        <comment>Animation du personnage lors du saut [Debut]</comment>
+        <event-block sid="9787472787143371">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="1071469540203348" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7705966771480665" type="sPerso">
+                    <param id="0" name="Animation">&quot;Saut&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2027017262427756">
+            <conditions>
+                <condition id="3" name="On key released" sid="9838857092319903" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="9884647966668006" type="sPerso">
+                    <param id="0" name="Animation">&quot;Pause&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Animation du personnage lors du saut [Fin]</comment>
+        <comment>Animation du personnage quand il se met en Sneak [Debut]</comment>
+        <event-block sid="1791613540035079">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="1138691344232803" type="Keyboard">
+                    <param id="0" name="Key">40 (Down arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="312514452053264" type="sPerso">
+                    <param id="0" name="Animation">&quot;Sneak&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3283326439794633">
+            <conditions>
+                <condition id="3" name="On key released" sid="1431513213079275" type="Keyboard">
+                    <param id="0" name="Key">40 (Down arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5469214701531623" type="sPerso">
+                    <param id="0" name="Animation">&quot;Pause&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Animation du personnage quand il se met en Sneak [Fin]</comment>
+    </events>
+</c2eventsheet>

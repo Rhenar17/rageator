@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>esGameover</name>
+    <events>
+        <event-block sid="8601389717989546">
+            <conditions>
+                <condition id="0" name="On clicked" sid="7873158795545738" type="ButtonRetourMenu" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="529900637688329" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3581908003345589">
+            <conditions>
+                <condition id="0" name="On clicked" sid="368264619479681" type="ButtonRejouer" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="7469321876416479" type="System">
+                    <param id="0" name="Layout">Niveau 1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
